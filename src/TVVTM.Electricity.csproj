@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>TVVTM.Electricity</AssemblyName>
+    <RootNamespace>TVVTM.Electricity</RootNamespace>
+    <!-- Game DLLs already bring the BCL surface we need; avoid implicit refs clashing. -->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <Nullable>disable</Nullable>
+    <!-- Reference DLLs live in ../lib (copied from the game's Managed folder). -->
+    <GameLibDir>$(MSBuildProjectDirectory)\..\lib</GameLibDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Game + Unity reference assemblies: link only, never copy/redistribute. -->
+    <Reference Include="VoxelTycoon">
+      <HintPath>$(GameLibDir)\VoxelTycoon.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(GameLibDir)\UnityEngine.CoreModule.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="UnityEngine">
+      <HintPath>$(GameLibDir)\UnityEngine.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>$(GameLibDir)\Newtonsoft.Json.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Harmony ships with the game (VoxelTycoon_Data/Managed/0Harmony.dll) → link only,
+         use the game's loaded copy to avoid version conflicts. -->
+    <Reference Include="0Harmony">
+      <HintPath>$(GameLibDir)\0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

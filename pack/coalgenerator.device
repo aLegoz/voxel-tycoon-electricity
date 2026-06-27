@@ -1,0 +1,50 @@
+{
+  "ClippingPlanes": [
+    { "MeshUri": "base/clipping_plane.obj", "Position": [0.5, 0.263, -0.841], "Rotation": [0, 0, 0], "Scale": [0.37, 0.402, 1] },
+    { "MeshUri": "base/clipping_plane.obj", "Position": [0.83, 0.263, 0.5], "Rotation": [0, 90, 0], "Scale": [0.37, 0.402, 1] },
+    { "MeshUri": "base/clipping_plane.obj", "Position": [-0.83, 0.263, 0.5], "Rotation": [0, 90, 0], "Scale": [0.37, 0.402, 1] }
+  ],
+  "Conveyors": [
+    { "SpawnConnection": 1, "ConveyorType": "StraightExtraShort", "Handle": false, "IsFlipped": true, "Position": [0, 0, 1], "Rotation": "Rotate90", "Uri": "base/regular.conveyor" },
+    { "SpawnConnection": null, "ConveyorType": "Cap", "Handle": true, "IsFlipped": false, "Position": [-1, 0, 1], "Rotation": "Rotate270", "Uri": "base/regular.conveyor" },
+    { "SpawnConnection": 1, "ConveyorType": "StraightExtraShort", "Handle": false, "IsFlipped": false, "Position": [1, 0, 1], "Rotation": "Rotate270", "Uri": "base/regular.conveyor" },
+    { "SpawnConnection": null, "ConveyorType": "Cap", "Handle": true, "IsFlipped": true, "Position": [2, 0, 1], "Rotation": "Rotate90", "Uri": "base/regular.conveyor" },
+    { "SpawnConnection": 1, "ConveyorType": "StraightExtraShort", "Handle": false, "IsFlipped": false, "Position": [1, 0, 0], "Rotation": "Rotate0", "Uri": "base/regular.conveyor" },
+    { "SpawnConnection": null, "ConveyorType": "Cap", "Handle": true, "IsFlipped": true, "Position": [1, 0, -1], "Rotation": "Rotate180", "Uri": "base/regular.conveyor" }
+  ],
+  "RecipeTargetUri": "tvvtm_electricity/coalgenerator.recipetarget",
+  "ResearchUri": null,
+  "Smokes": [
+    { "Position": [0, 3.5, -0.281], "Uri": "base/alloy_smelter_device.smoke" }
+  ],
+  "Sounds": [
+    { "SoundUri": "base/alloy_smelter_device.wav", "Time": 0.5 }
+  ],
+  "Submeshes": [
+    {
+      "DefaultAnimation": {
+        "ScaleX": { "0": 0.0, "0.1": 1.0, "0.9": 1.0, "1": 0.0 },
+        "ScaleY": { "0": 0.0, "0.1": 1.0, "0.9": 1.0, "1": 0.0 },
+        "ScaleZ": { "0": 0.0, "0.1": 1.0, "0.9": 1.0, "1": 0.0 }
+      },
+      "MeshUri": "base/alloy_smelter_device_fire.obj"
+    }
+  ],
+  "Liveries": {
+    "default": {
+      "BiomeLiveries": null,
+      "NightLiveries": null,
+      "Lights": null,
+      "MeshUri": "base/alloy_smelter_device.obj",
+      "MeshVariant": null
+    }
+  },
+  "Size": [2, 4, 2],
+  "CategoryUri": null,
+  "Generation": null,
+  "Hidden": false,
+  "Price": 30000.0,
+  "PriceMultiplier": null,
+  "RunningCosts": null,
+  "RunningCostsMultiplier": null
+}

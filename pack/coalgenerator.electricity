@@ -1,0 +1,6 @@
+{
+  "TargetUri": "tvvtm_electricity/coalgenerator.device",
+  "Role": "Generator",
+  "PowerOutput": 120,
+  "FuelItemUri": "base/coal.item"
+}

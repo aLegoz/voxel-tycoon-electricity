@@ -1,0 +1,16 @@
+# Decompiled game sources — reference only, DO NOT redistribute (game copyright)
+/VoxelTycoon/
+/VoxelTycoon.sln
+/reference/
+
+# Reference assemblies copied from the game — not ours to ship
+/lib/
+
+# Build output
+[Bb]in/
+[Oo]bj/
+*.user
+
+# IDE
+.vs/
+.idea/

@@ -1,0 +1,8 @@
+{
+  "Role": "Defaults",
+  "DefaultDeviceConsumption": 30,
+  "DefaultMineConsumption": 20,
+  "FuelGraceSeconds": 3,
+  "BalanceInterval": 0.25,
+  "TopologyRebuildInterval": 1
+}

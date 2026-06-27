@@ -1,0 +1,6 @@
+{
+  "TargetUri": "base/heating_plant.store",
+  "Role": "Seller",
+  "PowerOutput": 200,
+  "PricePerWatt": 0.02
+}

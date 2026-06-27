@@ -1,0 +1,9 @@
+{
+  "Duration": 5.0,
+  "InputItems": [
+    { "Count": 1.0, "Index": null, "Probability": null, "Uri": "base/coal.item" }
+  ],
+  "OutputItems": [],
+  "ResearchUri": null,
+  "TargetUri": "tvvtm_electricity/coalgenerator.recipetarget"
+}

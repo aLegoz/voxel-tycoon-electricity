@@ -1,0 +1,7 @@
+{
+  "Title": "Electricity",
+  "Description": "Production buildings (factories and mines) require electricity. Build coal generators and wire them to your industry with poles. Under-powered grids stop working.",
+  "Tags": ["Gameplay", "Industry"],
+  "Dependencies": [],
+  "Hidden": false
+}
