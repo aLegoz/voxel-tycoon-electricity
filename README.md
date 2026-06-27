@@ -20,7 +20,7 @@ This is a **Harmony code mod** plus a small **content pack**.
   production when the grid is under-powered. **No custom save data** — everything derives from
   poles (saved by the game) and live state.
 
-See [the plan](../../.claude/plans/voxel-tycoon-fuzzy-dahl.md) and `docs/` for design details.
+See [the plan](docs/PLAN.md) and `docs/` for design details.
 
 ## Repository layout
 
